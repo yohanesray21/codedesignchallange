@@ -7,7 +7,7 @@ import { Source_Sans_Pro } from 'next/font/google';
 
 import Halodoctor from '/public/assets/halodoctor.svg';
 import Janedoe from '/public/assets/janedoe.svg';
-import RightDoubleCode from '/public/assets/rightdoublecode.svg';
+import RightDoubleCode from 'public/assets/rightdoublecode.svg';
 import Calendar from '/public/assets/calendar.svg';
 import Bell from '/public/assets/bell.svg';
 import CCTV from '/public/assets/cctv.svg';
