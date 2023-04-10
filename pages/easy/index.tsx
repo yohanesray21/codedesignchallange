@@ -20,10 +20,26 @@ const sourceSansPro = Source_Sans_Pro({
 const Holadok = () => {
   return (
     <div className="min-h-screen bg-white">
-      <div className="container mx-auto py-10  bg-[url('../public/assets/rectangle-background.svg')] bg-no-repeat bg-right">
+      <div className="container mx-auto md:py-10 py-7 md:bg-[url('../public/assets/rectangle-background.svg')] bg-no-repeat bg-[right_top_1.3rem]  p-2">
         {/* Navbar */}
-        <div className="flex items-center justify-between mr-20">
-          <div className="flex gap-4 mr-20">
+        <div className="flex items-center justify-between md:mr-20">
+          <div className="flex gap-4 mr-20 items-center">
+            <button className="lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </button>
             <Link href="/easy">
               {' '}
               <Image alt="stethoscope" src={stethoscope} />
@@ -37,7 +53,7 @@ const Holadok = () => {
             </h3>
           </div>
 
-          <nav className="flex-1">
+          <nav className="flex-1 lg:block min-[50px]:hidden">
             <ul className="flex gap-10">
               <li>
                 <Link href="/easy" className="font-bold active:font-bold ">
@@ -62,7 +78,7 @@ const Holadok = () => {
             </ul>
           </nav>
 
-          <div className="flex gap-10 items-center">
+          <div className="flex gap-5 lg:gap-10 items-center">
             <h6 className="font-semibold">
               <Link href="/easy">Login</Link>
             </h6>
@@ -76,8 +92,8 @@ const Holadok = () => {
         </div>
 
         {/* Main */}
-        <div className="grid grid-cols-2 grid-rows-1 gap-5 relative">
-          <div className="bg-white border border-gray-100 p-5 rounded-3xl absolute max-w-sm right-96 top-32">
+        <div className="grid md:grid-cols-2 grid-cols-1 grid-rows-1 gap-5 relative">
+          <div className="bg-white border border-gray-100 p-5 rounded-3xl absolute max-w-sm right-96 top-32 xl:block min-[50px]:hidden">
             <div className="flex gap-5">
               <Image alt="janedoe" src={Janedoe} />
               <h6 className="font-bold flex-1">Jane Doe</h6>
@@ -94,25 +110,30 @@ const Holadok = () => {
               </p>
             </div>
           </div>
-          <div className="max-w-md my-auto grid gap-7">
+          <div className="md:max-w-md max-w-full my-auto grid gap-7 ">
+            <div className="md:hidden max-w-sm mx-auto">
+              <Image alt="halodoctor" src={Halodoctor} />
+            </div>
             <h1 className="text-5xl leading-tight tracking-wide">
               Get the healthcare you need, when you need it.
             </h1>
+
             <p className="text-[#101C45] text-lg">
               Manage all of your healthcare needs in one convenient place – from
               booking appointments to tracking your health history.
             </p>
-            <button className="border p-4 justify-self-start text-white font-light bg-[#203271] ">
+            <button className="border p-4 lg:justify-self-start text-white font-light bg-[#203271] md:mb-0 mb-3 ">
               <span> Book an Appointment</span>
             </button>
           </div>
-          <div className="justify-self-end">
+
+          <div className="md:flex justify-self-end min-[50px]:hidden">
             <Image alt="halodoctor" src={Halodoctor} />
           </div>
         </div>
 
         {/* Footer */}
-        <div className="bg-[#203271] text-white p-10 grid grid-cols-3 gap-4">
+        <div className="bg-[#203271]  text-white p-10 grid sm:grid-cols-3 gap-4 ">
           <div className="grid grid-rows-3 grid-flow-col gap-3">
             <Image alt="calendar" src={Calendar} className="row-span-3" />
             <h6 className="col-span-2">Online appointment scheduling</h6>
