@@ -18,7 +18,7 @@ const TwitterEmbed = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center">
-      <div className="max-w-lg w-full mx-4 bg-[#243447] p-6 rounded-md ">
+      <div className="max-w-xl w-full mx-4 bg-[#243447] p-6 rounded-md ">
         <div className="flex items-center justify-between mb-4 overflow-hidden gap-3 ">
           <div className="flex gap-3 sm:gap-6 shrink-0">
             <Image alt="twitter-user" src={twitterUser} />
