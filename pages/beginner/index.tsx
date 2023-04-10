@@ -22,7 +22,11 @@ const TwitterEmbed = () => {
           <div className="flex gap-3 sm:gap-6 shrink-0">
             <Image alt="twitter-user" src={twitterUser} />
             <div>
-              <p className={sourceSansPro.className[600] + ' dark:text-white'}>
+              <p
+                className={
+                  sourceSansPro.className[600] + '  text-black dark:text-white'
+                }
+              >
                 John Doe
               </p>
               <p className="font-light text-slate-400">@realjohndoe</p>
@@ -32,7 +36,10 @@ const TwitterEmbed = () => {
         </div>
         <div className="mb-4">
           <p
-            className={sourceSansPro.className + ' break-words dark:text-white'}
+            className={
+              sourceSansPro.className +
+              ' break-words text-black dark:text-white'
+            }
           >
             Why do they call it &apos;debugging&apos; when it feels more like
             &apos;wildly guessing and hoping for the best&apos;?
