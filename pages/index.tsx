@@ -1,6 +1,5 @@
-import Image from 'next/image';
-import { Inter } from 'next/font/google';
-import TwitterEmbed from '@/components/beginner';
+import { Inter, Source_Sans_Pro } from 'next/font/google';
+import TwitterEmbed from './beginner';
 
 const inter = Inter({ subsets: ['latin'] });
 
