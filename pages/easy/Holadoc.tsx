@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -18,13 +18,95 @@ const sourceSansPro = Source_Sans_Pro({
 });
 
 const Holadok = () => {
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    if (!show) {
+      document.querySelector('body')?.classList.remove('overflow-hidden');
+    } else if (show) {
+      document.querySelector('body')?.classList.add('overflow-hidden');
+    }
+  }, [show]);
+
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white relative">
+      {/* Nav Mobile */}
+
+      {show && (
+        <div className="lg:hidden backdrop-opacity- bg-gray-100/50 min-h-screen min-w-full z-10 fixed transition-all ease-in duration-500">
+          <nav className="bg-orange p-5  absolute min-h-[200px] min-w-[250px] z-10 top-2 left-2  bg-white border rounded-2xl  text-gray-800">
+            <ul className=" flex flex-col gap-5">
+              <div className="flex gap-2 justify-between items-center">
+                <Image alt="stethoscope" src={stethoscope} />
+                <h3
+                  className={
+                    sourceSansPro.className +
+                    'text-[#101C45]  font-bold text-lg flex-1'
+                  }
+                >
+                  <Link href="/easy/Holadoc">Holadok</Link>
+                </h3>
+                <button onClick={() => setShow((prevShow) => !prevShow)}>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                    stroke="currentColor"
+                    className="w-6 h-6"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <li>
+                <Link
+                  href="/easy/Holadoc"
+                  className="font-bold active:font-bold "
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/easy/Holadoc"
+                  className="hover:font-bold font-light"
+                >
+                  Features
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/easy/Holadoc"
+                  className="hover:font-bold font-light"
+                >
+                  Blog
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/easy/Holadoc"
+                  className="hover:font-bold font-light"
+                >
+                  About Us
+                </Link>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      )}
       <div className="container mx-auto md:py-10 py-7 md:bg-[url('../public/assets/rectangle-background.svg')] bg-no-repeat bg-[right_top_1.3rem]  p-2">
         {/* Navbar */}
         <div className="flex items-center justify-between md:mr-20 text-[#101C45]">
           <div className="flex gap-4 mr-20 items-center ">
-            <button className="lg:hidden">
+            <button
+              className="lg:hidden"
+              onClick={() => setShow((prevShow) => !prevShow)}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
