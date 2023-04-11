@@ -11,6 +11,7 @@ import RightDoubleCode from 'public/assets/rightdoublecode.svg';
 import Calendar from '/public/assets/calendar.svg';
 import Bell from '/public/assets/bell.svg';
 import CCTV from '/public/assets/cctv.svg';
+import Switcher from '@/components/button/Switcher';
 
 const sourceSansPro = Source_Sans_Pro({
   weight: ['300', '600'],
@@ -22,8 +23,8 @@ const Holadok = () => {
     <div className="min-h-screen bg-white">
       <div className="container mx-auto md:py-10 py-7 md:bg-[url('../public/assets/rectangle-background.svg')] bg-no-repeat bg-[right_top_1.3rem]  p-2">
         {/* Navbar */}
-        <div className="flex items-center justify-between md:mr-20">
-          <div className="flex gap-4 mr-20 items-center">
+        <div className="flex items-center justify-between md:mr-20 text-[#101C45]">
+          <div className="flex gap-4 mr-20 items-center ">
             <button className="lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -46,14 +47,14 @@ const Holadok = () => {
             </Link>
             <h3
               className={
-                sourceSansPro.className + 'text-[#101C45] font-bold text-lg'
+                sourceSansPro.className + 'text-[#101C45]  font-bold text-lg'
               }
             >
               <Link href="/easy">Holadok</Link>
             </h3>
           </div>
 
-          <nav className="flex-1 lg:block min-[50px]:hidden">
+          <nav className="flex-1 lg:block min-[50px]:hidden ">
             <ul className="flex gap-10">
               <li>
                 <Link href="/easy" className="font-bold active:font-bold ">
@@ -79,7 +80,7 @@ const Holadok = () => {
           </nav>
 
           <div className="flex gap-5 lg:gap-10 items-center">
-            <h6 className="font-semibold">
+            <h6 className="font-semibold dark:text-[#101C45]">
               <Link href="/easy">Login</Link>
             </h6>
             <button
@@ -114,7 +115,7 @@ const Holadok = () => {
             <div className="md:hidden max-w-sm mx-auto">
               <Image alt="halodoctor" src={Halodoctor} />
             </div>
-            <h1 className="text-5xl leading-tight tracking-wide">
+            <h1 className="text-5xl leading-tight tracking-wide text-[#101C45]">
               Get the healthcare you need, when you need it.
             </h1>
 
