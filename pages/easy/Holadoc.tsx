@@ -11,7 +11,6 @@ import RightDoubleCode from 'public/assets/rightdoublecode.svg';
 import Calendar from '/public/assets/calendar.svg';
 import Bell from '/public/assets/bell.svg';
 import CCTV from '/public/assets/cctv.svg';
-import Switcher from '@/components/button/Switcher';
 
 const sourceSansPro = Source_Sans_Pro({
   weight: ['300', '600'],
@@ -41,7 +40,7 @@ const Holadok = () => {
                 />
               </svg>
             </button>
-            <Link href="/easy">
+            <Link href="/easy/Holadoc">
               {' '}
               <Image alt="stethoscope" src={stethoscope} />
             </Link>
@@ -50,29 +49,41 @@ const Holadok = () => {
                 sourceSansPro.className + 'text-[#101C45]  font-bold text-lg'
               }
             >
-              <Link href="/easy">Holadok</Link>
+              <Link href="/easy/Holadoc">Holadok</Link>
             </h3>
           </div>
 
           <nav className="flex-1 lg:block min-[50px]:hidden ">
             <ul className="flex gap-10">
               <li>
-                <Link href="/easy" className="font-bold active:font-bold ">
+                <Link
+                  href="/easy/Holadoc"
+                  className="font-bold active:font-bold "
+                >
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/easy" className="hover:font-bold font-light">
+                <Link
+                  href="/easy/Holadoc"
+                  className="hover:font-bold font-light"
+                >
                   Features
                 </Link>
               </li>
               <li>
-                <Link href="/easy" className="hover:font-bold font-light">
+                <Link
+                  href="/easy/Holadoc"
+                  className="hover:font-bold font-light"
+                >
                   Blog
                 </Link>
               </li>
               <li>
-                <Link href="/easy" className="hover:font-bold font-light">
+                <Link
+                  href="/easy/Holadoc"
+                  className="hover:font-bold font-light"
+                >
                   About Us
                 </Link>
               </li>
@@ -81,7 +92,7 @@ const Holadok = () => {
 
           <div className="flex gap-5 lg:gap-10 items-center">
             <h6 className="font-semibold dark:text-[#101C45]">
-              <Link href="/easy">Login</Link>
+              <Link href="/easy/Holadoc">Login</Link>
             </h6>
             <button
               className="border font-semibold border-[#101C45] text-[#101C45] px-3 py-1"
