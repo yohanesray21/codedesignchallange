@@ -1,8 +1,4 @@
-import { Inter, Source_Sans_Pro } from 'next/font/google';
-import TwitterEmbed from './beginner/TwitterEmbed';
 import Link from 'next/link';
-
-const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
   return (
