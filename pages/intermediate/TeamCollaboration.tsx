@@ -52,16 +52,16 @@ const TeamCollaboration = () => {
             )}
           </nav>
           <div className="flex gap-x-4">
-            <button className="text-slate-500 px-4 py-2 rounded-lg  hover:outline hover:outline-1 hover:outline-yellow-300 hover:text-yellow-300">
+            <button className="text-slate-500 px-4 py-2 rounded-lg  hover:outline hover:outline-1 hover:outline-yellow-300 hover:text-[#1F1F1F]">
               Login
             </button>
-            <button className="text-black bg-yellow-300 px-4 py-2 rounded-lg hover:text-white">
+            <button className="text-[#1F1F1F] bg-yellow-300 px-4 py-2 rounded-lg hover:text-white">
               Sign Up
             </button>
           </div>
         </div>
       </div>
-      <div className="text-black">Hello</div>
+      <div className="text-[1F1F1F#]">Hello</div>
     </div>
   );
 };
