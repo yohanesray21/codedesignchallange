@@ -11,6 +11,11 @@ export default function Home() {
         <li className="text-blue-500 hover:text-blue-900">
           <Link href="/easy/Holadoc">2. Holadoc</Link>
         </li>
+        <li className="text-blue-500 hover:text-blue-900">
+          <Link href="/intermediate/TeamCollaboration">
+            3. Team Collaboration
+          </Link>
+        </li>
       </ol>
     </div>
   );
